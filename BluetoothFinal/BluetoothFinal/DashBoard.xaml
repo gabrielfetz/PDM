@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BluetoothFinal.DashBoard"
+             BackgroundColor="Black"
+             Title="Dash Board">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Padding="0,40,0,0">
+            <Label FontSize="22" TextColor="White" Text="Monitoramento dos Sensores"></Label>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="AtualizarButton" Text="Atualizar" Clicked="AtualizarButton_Clicked"></Button>
+            <Button x:Name="DesconectarButton" Text="Desconectar" Clicked="DesconectarButton_Clicked"></Button>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="TemperaturaLabel" TextColor="White"></Label>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="LuminosidadeLabel" TextColor="White"></Label>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

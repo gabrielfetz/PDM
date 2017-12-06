@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BluetoothFinal"
+             x:Class="BluetoothFinal.MainPage"
+             BackgroundColor="Black"
+             Title="Comunicação Bluetooth">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Padding="0,40,0,0">
+            <Label FontSize="22" TextColor="White" Text="Situação:"></Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label x:Name="SituacaoLabel" FontSize="22" TextColor="White" Text="Nenhum dispositivo pareado"></Label>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="0,100,0,0">
+            <BoxView x:Name="StatusBoxView" BackgroundColor="Red"></BoxView>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="StatusButton" Text="Status" Clicked="StatusButton_Clicked"></Button>
+            <Button x:Name="ScanButton" Text="Exibir pareados" Clicked="ScanButton_Clicked"></Button>
+        </StackLayout>
+
+        <ListView x:Name="DispositivosListView" ItemSelected="DispositivosListView_ItemSelected">
+        </ListView>
+        
+    </StackLayout>
+</ContentPage>
